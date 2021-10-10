@@ -1,4 +1,16 @@
 body {
-	background-color: black;
-	color: white;
+	background-image: url(bg.jpg);
+	background-size: 100%;
+}
+
+.body {
+	margin-top: 10%;
+	background-color: white;
+}
+.header {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.footer {
+	background-color: white;
 }
