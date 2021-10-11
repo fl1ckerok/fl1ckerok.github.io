@@ -22,6 +22,8 @@
 	padding-left: 20%;
 }
 .ava {
-	vertical-align: right;
-	padding-right: 3%;
+	margin-right: 5px;
+	border-radius: 100px; /* Радиус скругления */
+    border: 2px solid purple; /* Параметры рамки */
+    box-shadow: 0 0 3px #666; /* Параметры тени */
 }
