@@ -66,9 +66,11 @@
 	<div class="body">
 		<div class="header">
 			<center>
-				<h3>Розвиваю особистість замість перегляду мемів</h3>
+				<h3>Розвиваю особистість замість перегляду мемів</h3> <!-- Цитата -->
 			<h5>майже :)</h5>
+			<span class="imgt" data-bs-placement="right" title="Фірмова осіння ава">
 			<img class="ava" src="ava.gif" height="150px">
+			</span>
 			<h6>
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
   				<path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -95,6 +97,13 @@
 			<h6>@IAMAVASYA</h6>
 		</center>
 	</div>
+
+	    <script>
+    	const tooltips = document.querySelectorAll('.imgt')
+    	tooltips.forEach(t => {
+    		new bootstrap.Tooltip(t)
+    	})
+		</script>
 
   </body>
 </html>
