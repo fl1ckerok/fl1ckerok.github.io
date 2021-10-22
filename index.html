@@ -27,6 +27,7 @@
     <title>Rostyslav's page</title>
   </head>
   <body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -80,6 +81,54 @@
 				</svg>
 				Next event: Halloween (2 дня)</h6> <!-- Некст івент -->
 			</center>
+			<hr>
+		</div>
+		<div class="news">
+			<h2 style="margin-left: 5%;">Новини</h2>
+			<hr>
+			<p>Some text here</p>
+			<p>And here...</p>
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">
+        	<div id="displayMoment1">
+        	</div>
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted" id="displayMoment2"></small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted" id="displayMoment3"></small>
+      </div>
+    </div>
+  </div>
+</div>
 		</div>
 	</div>
 	<div class="footer">
@@ -100,6 +149,15 @@
     	tooltips.forEach(t => {
     		new bootstrap.Tooltip(t)
     	})
+		</script>
+
+		<script>
+			var now1 = moment([2021, 9, 22, 21]).fromNow();
+			document.getElementById("displayMoment1").innerHTML = now1;
+			var now2 = moment([2021, 9, 22, 21]).fromNow();
+			document.getElementById("displayMoment2").innerHTML = now2;
+			var now3 = moment([2021, 9, 22, 21]).fromNow();
+			document.getElementById("displayMoment3").innerHTML = now3;
 		</script>
 
   </body>
