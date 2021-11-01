@@ -1,10 +1,11 @@
 .body {
 	margin-top: 10%;
-	background-color: white;
+	background-color: black;
+	color: red;
 }
 .header {
-	padding-top: 1%;
-	padding-bottom: 1%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 .footer {
 	background-color: white;
@@ -24,7 +25,7 @@
 .ava {
 	margin-right: 5px;
 	border-radius: 100px; /* Радиус скругления */
-    border: 2px solid purple; /* Параметры рамки */
+    border: 2px solid darkred; /* Параметры рамки */
     box-shadow: 0 0 3px #666; /* Параметры тени */
 }
 .bodyr {
